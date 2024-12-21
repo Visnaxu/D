@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hihih</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Indie Flower";
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 1.5rem;
+            background-color:#222222;
+        }
+        h2{
+            font-family: "Indie Flower";
+            color: white; 
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Podaj hasła</h1>
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Hasło 1" name="pass1" id='pass1' required />
+        <label for="pass1" class="form__label">Hasło 1</label>
+    </div>
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Hasło 2" name="pass2" id='pass2' required />
+        <label for="pass2" class="form__label">Hasło 2</label>
+    </div>
+    <button type="submit" id="pass3" onclick="pass()">Zatwierdź</button>
+    <h2 id="message1"></h2>
+    <h2 id="message2"></h2>
+    <button type="submit" id="pass4" onclick="hint()">Podpowiedzi</button>
+    <div id="hint">
+        <h3 id="hint1"></h3>
+    </div>
+
+    <script src="script-index.js"></script>
+</body>
+</html>
